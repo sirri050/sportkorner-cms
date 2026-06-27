@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_matches_matches",
+  "info": {
+    "displayName": "matches",
+    "icon": "walk"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "homeTeamName": {
+      "type": "string"
+    },
+    "awayTeamName": {
+      "type": "string"
+    },
+    "homeScore": {
+      "type": "integer"
+    },
+    "awayScore": {
+      "type": "integer"
+    },
+    "match_status": {
+      "type": "enumeration",
+      "enum": [
+        "finished",
+        "scheduled"
+      ]
+    }
+  },
+  "config": {}
+}

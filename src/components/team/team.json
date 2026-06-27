@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_team_teams",
+  "info": {
+    "displayName": "team",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logoUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
