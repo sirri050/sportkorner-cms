@@ -50,7 +50,7 @@ jobs:
           script: |
             cd ~/sportkorner-cms
 
-            echo "Restarting Strapi..."
+            rm -rf dist
 
             pm2 restart sportkorner-cms || pm2 restart all
 
