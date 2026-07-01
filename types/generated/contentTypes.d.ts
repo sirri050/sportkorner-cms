@@ -579,6 +579,21 @@ export interface ApiNewsItemNewsItem extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
+    articleContent: Schema.Attribute.DynamicZone<
+      [
+        'image.image',
+        'quote.quote',
+        'video.video',
+        'heading.heading',
+        'paragraph.paragraph',
+        'gallery.gallery',
+      ]
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     categories: Schema.Attribute.Relation<
       'manyToMany',
       'api::category.category'
@@ -590,8 +605,7 @@ export interface ApiNewsItemNewsItem extends Struct.CollectionTypeSchema {
         };
       }>;
     coverImage: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+      'images' | 'files' | 'videos' | 'audios'
     > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
