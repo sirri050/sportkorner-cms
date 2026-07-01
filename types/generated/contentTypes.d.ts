@@ -590,7 +590,8 @@ export interface ApiNewsItemNewsItem extends Struct.CollectionTypeSchema {
         };
       }>;
     coverImage: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
+      'images' | 'files' | 'videos' | 'audios',
+      true
     > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
