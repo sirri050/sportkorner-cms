@@ -63,7 +63,7 @@
           "localized": false
         }
       },
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -76,6 +76,22 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "news"
+    },
+    "articleContent": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "image.image",
+        "quote.quote",
+        "video.video",
+        "heading.heading",
+        "paragraph.paragraph",
+        "gallery.gallery"
+      ]
     }
   }
 }
