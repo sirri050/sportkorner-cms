@@ -755,7 +755,14 @@ export interface ApiSpotlightSpotlight extends Struct.CollectionTypeSchema {
         };
       }>;
     type: Schema.Attribute.Enumeration<
-      ['Featured_Highlight', 'Play_of_the_day', 'legend', 'rising_star']
+      [
+        'Featured_Highlight',
+        'Play_of_the_day',
+        'european_highlight',
+        'nba_moment',
+        'legend',
+        'rising_star',
+      ]
     > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

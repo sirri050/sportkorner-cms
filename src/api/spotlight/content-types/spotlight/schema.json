@@ -41,6 +41,8 @@
       "enum": [
         "Featured_Highlight",
         "Play_of_the_day",
+        "european_highlight",
+        "nba_moment",
         "legend",
         "rising_star"
       ]
