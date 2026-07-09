@@ -75,6 +75,14 @@
       "relation": "manyToMany",
       "target": "api::news-item.news-item",
       "inversedBy": "categories"
+    },
+    "isSport": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
